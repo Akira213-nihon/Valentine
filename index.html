@@ -18,7 +18,7 @@
 
     body {
       text-align: center;
-      overflow-x: hidden; /* Prevents horizontal scrolling */
+      overflow-x: hidden; 
     }
 
     .container {
@@ -26,7 +26,7 @@
       padding: 10px;
     }
 
-    /* Title Animation */
+    
     .heading {
       font-family: "Bonheur Royale", serif;
       letter-spacing: 5px;
@@ -35,7 +35,7 @@
       animation: fadeIn 2s ease-in-out;
     }
 
-    /* Info text animation */
+ 
     .info {
       font-family: "Rouge Script", serif;
       font-size: 25px;
@@ -43,7 +43,7 @@
       animation: fadeInUp 2s ease-in-out forwards 1s;
     }
 
-    /* Valentine's Heart Beat Effect */
+
     .valentine {
       font-family: "Great Vibes", serif;
       letter-spacing: 5px;
@@ -51,7 +51,7 @@
       animation: heartbeat 2.5s infinite;
     }
 
-    /* Image Hover Effect */
+
     .p4 {
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
@@ -65,7 +65,7 @@
       padding: 2px;
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
-      max-width: 100%; /* Ensures images don't overflow */
+      max-width: 100%; 
       height: auto;
     }
 
@@ -73,7 +73,7 @@
       transform: scale(1.08);
     }
 
-    /* Fade-in Keyframes */
+
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -84,14 +84,14 @@
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* Heartbeat Effect */
+
     @keyframes heartbeat {
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }
 
-    /* Zoom-in for images */
+
     @keyframes zoomIn {
       0% { transform: scale(0.5); opacity: 0; }
       100% { transform: scale(1); opacity: 1; }
@@ -104,23 +104,21 @@
 </head>
 <body>
   <div class="container">
-    <!-- Title -->
+  
     <h1 class="text-danger text-center heading mt-3">To My Princess</h1>
 
-    <!-- Message -->
     <p class="w-75 text-center m-auto p-2 p-md-0 info">
       Where to start... Firstly, I'm so thankful to meet you and Sadia. I cannot imagine how much Sadia means to me, but I never knew that I could find someone I want to care about as much as I do with Sadia. You are so generous, always making me smile, always making me want to be with you and miss you. I don't want to brag much about how much you mean to me because I always do that in chat, but yeah, I Love You a lot.
     </p>
 
-    <!-- Valentine's Message -->
+
     <h2 class="text-center valentine mt-2">Happy Valentine's Day</h2>
 
-    <!-- Main Image -->
+
     <div class="d-flex justify-content-center">
       <img src="mun's-collection/p4.jpeg" class="m-auto p4 zoom" alt="" style="width: 300px;height: 500px;">
     </div>
 
-    <!-- Audio with Play Button -->
     <div class="d-flex justify-content-center mt-2">
       <audio id="bg-music">
         <source src="mun's-collection/oneofthegirls.mp3" type="audio/mpeg">
@@ -128,7 +126,6 @@
       <button class="btn btn-danger ms-2" onclick="document.getElementById('bg-music').play()">❤️ Play Music</button>
     </div>
 
-    <!-- Images Collection -->
     <div class="row g-2 justify-content-center images mt-3">
       <div class="col-6 col-md-3"><img src="mun's-collection/p1.jpeg" class="zoom img-fluid" alt=""></div>
       <div class="col-6 col-md-3"><img src="mun's-collection/p2.jpeg" class="zoom img-fluid" alt=""></div>
