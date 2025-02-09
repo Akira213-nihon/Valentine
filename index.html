@@ -3,66 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <title>To My Princess</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NL+Guides&family=Roboto:wght@100;300;400;500;700;900&family=Rouge+Script&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NL+Guides&family=Roboto:wght@100;300;400;500;700;900&family=Rouge+Script&display=swap" rel="stylesheet">
-<style>
-  *{
-    user-select: none;
-    margin: 0;
-  }
-  .heading{
-    font-family: "Bonheur Royale", serif;
-    letter-spacing: 5px;
-    word-spacing: 10px;
-    font-weight: bold;
-  }
-.info{
-  font-family: "Rouge Script", serif;
-  font-size: 25px;
-}
-.valentine{
-  font-family: "Great Vibes", serif;
-  letter-spacing: 20px;
-}
-.p4{
-  border-radius: 10px;
-}
-.images img{
-  margin-top: 5px;
-  margin: 0;
-  padding: 2px;
-  border-radius: 10px;
-}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cedarville+Cursive&family=Montserrat:wght@100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+  <style>
+    * {
+      user-select: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-</style>
+    body {
+      text-align: center;
+      overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    /* Title Animation */
+    .heading {
+      font-family: "Bonheur Royale", serif;
+      letter-spacing: 5px;
+      word-spacing: 10px;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Info text animation */
+    .info {
+      font-family: "Rouge Script", serif;
+      font-size: 25px;
+      opacity: 0;
+      animation: fadeInUp 2s ease-in-out forwards 1s;
+    }
+
+    /* Valentine's Heart Beat Effect */
+    .valentine {
+      font-family: "Great Vibes", serif;
+      letter-spacing: 5px;
+      color: red;
+      animation: heartbeat 2.5s infinite;
+    }
+
+    /* Image Hover Effect */
+    .p4 {
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      max-width: 100%;
+    }
+
+  
+
+    .images img {
+      margin-top: 5px;
+      padding: 2px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      max-width: 100%; /* Ensures images don't overflow */
+      height: auto;
+    }
+
+    .images img:hover {
+      transform: scale(1.08);
+    }
+
+    /* Fade-in Keyframes */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Heartbeat Effect */
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Zoom-in for images */
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .zoom {
+      animation: zoomIn 1.5s ease-in-out;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="text-danger text-center heading mt-3">To My Princess</h1>
-  <p class="w-75 text-center m-auto p-2 p-md-0 info">Where to start...firstly,I'm soo thankful to meet you and sadia,I cannot imagine how much sadia means to me but i never knew that i could find someone i want to care about as much as i do with sadia,you were soo generous,you always make me smile,always make me wanna be with you and miss you,i don't wanna cheese talk much or brag about how much you mean to me because i always do that in the chat,but yeahh ,I Love you a lot.</p>
-  <h2 class="text-center valentine mt-2">Happy Valentine's Day</h2>
-  <div class="d-flex justify-content-center">
-    <img src="mun's-collection/p4.jpeg" class="m-auto p4" alt="" style="width: 300px;height: 500px;">
-  </div>
-  <div class="row w-75 m-auto images mt-3">
+  <div class="container">
+    <!-- Title -->
+    <h1 class="text-danger text-center heading mt-3">To My Princess</h1>
 
-  <img src="mun's-collection/p1.jpeg" class="col-6" alt="">
-    <img src="mun's-collection/p2.jpeg" class="col-3" alt="">
-    <img src="mun's-collection/p3.jpeg" 
-    class="col-3" alt="">
-    <img src="mun's-collection/p5.jpeg" class="col-3" alt="">
-    <img src="mun's-collection/p6.jpeg" class="col-3" alt="">
-    <img src="mun's-collection/p10.jpeg" class="col-6" alt="">
-    <img src="mun's-collection/p9.jpeg" class="col-6" alt="">
-    <img src="mun's-collection/p7.jpeg" class="col-3 p7" alt="">
-    <img src="mun's-collection/p8.jpeg" class="col-3 p8" alt="">
-  
+    <!-- Message -->
+    <p class="w-75 text-center m-auto p-2 p-md-0 info">
+      Where to start... Firstly, I'm so thankful to meet you and Sadia. I cannot imagine how much Sadia means to me, but I never knew that I could find someone I want to care about as much as I do with Sadia. You are so generous, always making me smile, always making me want to be with you and miss you. I don't want to brag much about how much you mean to me because I always do that in chat, but yeah, I Love You a lot.
+    </p>
+
+    <!-- Valentine's Message -->
+    <h2 class="text-center valentine mt-2">Happy Valentine's Day</h2>
+
+    <!-- Main Image -->
+    <div class="d-flex justify-content-center">
+      <img src="mun's-collection/p4.jpeg" class="m-auto p4 zoom" alt="" style="width: 300px;height: 500px;">
+    </div>
+
+    <!-- Audio with Play Button -->
+    <div class="d-flex justify-content-center mt-2">
+      <audio id="bg-music">
+        <source src="mun's-collection/oneofthegirls.mp3" type="audio/mpeg">
+      </audio>
+      <button class="btn btn-danger ms-2" onclick="document.getElementById('bg-music').play()">❤️ Play Music</button>
+    </div>
+
+    <!-- Images Collection -->
+    <div class="row g-2 justify-content-center images mt-3">
+      <div class="col-6 col-md-3"><img src="mun's-collection/p1.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p2.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p3.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p5.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p6.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p10.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p9.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p7.jpeg" class="zoom img-fluid" alt=""></div>
+      <div class="col-6 col-md-3"><img src="mun's-collection/p8.jpeg" class="zoom img-fluid" alt=""></div>
+    </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
